@@ -1,0 +1,153 @@
+
+.{
+    margin: 0;
+    padding: o;
+}
+body{
+    background-color: rgb(4, 31, 22);
+}
+.hidden { display: none; 
+}
+header, footer {
+  background-color: #093170;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.login-box {
+    width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+border-radius: 10px;
+  }
+  .login-box h2 {
+    text-align: center;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #093170;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+.conteiner{
+    margin-top: 5px;
+    width: 100%;
+    height: 146px;
+    background: rgb(8, 54, 8);
+    position: absolute;
+}
+.conteiner a{
+
+    display: flex;
+    width: 100px;
+    float: left;
+    justify-content: center;
+    list-style: none;
+    margin-left: 92px;
+    margin-top: 27px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.conteiner a:hover{
+    color: orangered;
+}
+
+.containerr {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0; /* Optional background */
+    margin-top: 30px;
+  }
+
+  .animated-image {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 500pxpx; /* Adjust size as needed */
+    height: 200px;
+    /* Animate */
+    animation: moveRight 7s linear infinite;
+  }
+
+  .delay-0 {
+    animation-delay: 0s;
+  }
+  .delay-1 {
+    animation-delay: 2s;
+  }
+  .delay-2 {
+    animation-delay: 4s;
+  }
+
+  /* Keyframes for moving right */
+  @keyframes moveRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 100px);
+    }
+  }
+
+.mnu{
+    background: rgb(129, 124, 124);
+    width: 100%;
+    height: 200px;
+    margin-top: 225px;
+}
+.mnu h1{
+    color: blue;
+    font-size: 45px;
+    font-size: 45px;
+}
+.mnu h3{
+    color: black;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mnu span{
+    color: rgb(229, 74, 18);
+}
+.service{
+    width: 100%;
+    height: 300px;
+    background: rgb(129, 124, 124);
+    margin-top: 45px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.service b{
+    font-size: 22px;
+}
+.service h1{
+    color: blue;
+}
+.about{
+    width: 100%;
+    height: 290px;
+    background: rgb(129, 124, 124);
+    margin-top: 50px;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about h1{
+    color: blue;
+}
+span{
+    color: orangered;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

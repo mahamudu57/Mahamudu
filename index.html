@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mahamudu</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="loginPage" class="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+      </div>
+      
+      <div id="website" class="hidden">
+      
+        
+   <div class="conteiner">
+    <a href="#">Home</a>
+    <a href="about.html">about</a>
+    <a href="service.html">service</a>
+    <a href="contact.html">contact</a>
+    <a href="login.html">Login</a>
+    <div class="mnu">
+        <h1>WELCOME KEN CREATIVE</h1>
+        <h3>
+            Welcome to <span>KEN CREATIVE LUBS</span>, your trusted partner in creating stunning websites, powerful desktop applications, and seamless mobile apps. <br>We are committed to delivering tailored solutions that help your business thrive in the digital world.
+        </h3>
+       </div>
+       <div class="containerr">
+        <img src="img/1.jfif" class="animated-image delay-0" />
+        <img src="img/2.jfif" class="animated-image delay-1" />
+        <img src="img/3.jfif" class="animated-image delay-2" />
+      </div>
+      
+       <div class="service">
+        <h1>Services</h1>
+        <b>Website Development:</b><br>
+Crafting responsive, user-friendly, and visually appealing websites tailored to your brand. From simple landing pages to complex e-commerce platforms, we build solutions that drive engagement and conversions.
+<br>
+<b>Desktop Development:</b><br><br>
+Developing robust desktop applications for Windows, Mac, and Linux. Whether you need custom software, automation tools, or enterprise solutions, our team ensures performance and reliability.
+<br>
+<b>App Development:</b><br><br>
+Creating innovative mobile applications for iOS and Android. We focus on intuitive design and smooth functionality to enhance user experience and expand your reach.
+
+
+       </div>
+       <div class="about">
+        <h1>About</h1>
+        <b> Mission:</b><BR>
+At <span>KEN CREATIVE LUBS</span>, our mission is to empower businesses through cutting-edge digital solutions. With a team of experienced developers and designers, we strive to deliver projects that exceed expectations.
+<br><br>
+<B>Our Vision:</B><br>
+To be a leading provider in website, desktop, and app development, recognized for quality, innovation, and customer satisfaction.
+       </div>
+   </div>
+   </div>
+
+   <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+  
+      // Simple fixed login for demo
+      if (user === "mahamudu" && pass === "Ken@1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("website").classList.remove("hidden");
+      } else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Register & Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(4, 31, 22);
+    margin: 0;
+    padding: 20px;
+  }
+  .conteine{
+    margin-top: 5px;
+    width: 100%;
+    height: 146px;
+    background: rgb(8, 54, 8);
+    position: absolute;
+}
+.conteine a{
+
+    display: flex;
+    width: 100px;
+    float: left;
+    justify-content: center;
+    list-style: none;
+    margin-left: 92px;
+    margin-top: 27px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.conteine a:hover{
+    color: orangered;
+}
+  .containerrr {
+    max-width: 400px;
+    max-height: 500px;
+    margin: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+ 
+  .form-section {
+    display: none;
+  }
+
+  .form-active {
+    display: block;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004999;
+  }
+  .switch-link {
+    margin-top: 15px;
+    padding-left: 23px;
+  }
+  .switch-link a {
+    font-size: 14px;
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+    margin-left: 192px;
+    margin-top: -15px;
+  }
+</style>
+</head>
+<body>
+    <div class="conteine">
+        <a href="index.html">Home</a>
+        <a href="about.html">about</a>
+        <a href="service.html">service</a>
+        <a href="contact.html">contact</a>
+        <a href="login.html">Login</a>
+<div class="containerrr">
+
+  <div id="loginForm" class="form-section form-active">
+    <h2>Login</h2>
+    <form id="login" action="" method="POST">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="email" required />
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="switch-link">
+      <p>Don't have an account?<br> <a id="showRegister" href="#">Register here</a></p>
+    </div>
+  </div>
+
+
+  <div id="registerForm" class="form-section">
+    <h2>Register</h2>
+    <form id="register" action="register_process.php" method="POST">
+      <label for="regName">Full Name:</label>
+      <input type="text" id="regName" name="name" required />
+
+      <label for="regEmail">Email:</label>
+      <input type="email" id="regEmail" name="email" required />
+
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" name="password" required />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirm_password" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <div class="switch-link">
+      <p>Already have an account?<br> <a id="showLogin" href="#">Login here</a></p>
+    </div>
+  </div>
+</div></div>
+
+<script>
+  const loginForm = document.getElementById('loginForm');
+  const registerForm = document.getElementById('registerForm');
+  const showRegisterLink = document.getElementById('showRegister');
+  const showLoginLink = document.getElementById('showLogin');
+
+  showRegisterLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginForm.classList.remove('form-active');
+    registerForm.classList.add('form-active');
+  });
+
+  showLoginLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    registerForm.classList.remove('form-active');
+    loginForm.classList.add('form-active');
+  });
+</script>
+
+</body>
+</html>
