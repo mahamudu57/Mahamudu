@@ -7,14 +7,6 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-    <div id="loginPage" class="login-box">
-        <h2>Login</h2>
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button onclick="login()">Login</button>
-      </div>
-      
-      <div id="website" class="hidden">
       
         
    <div class="conteiner">
@@ -59,20 +51,6 @@ To be a leading provider in website, desktop, and app development, recognized fo
    </div>
    </div>
 
-   <script>
-    function login() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-  
-      // Simple fixed login for demo
-      if (user === "mahamudu@gmail.com" && pass === "Ken@1234") {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("website").classList.remove("hidden");
-      } else {
-        alert("Invalid username or password!");
-      }
-    }
-  </script>
 
 </body>
 </html>
